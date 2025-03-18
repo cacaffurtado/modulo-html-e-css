@@ -1,0 +1,20 @@
+/* elementos */
+h2 {
+    color: rgb(212, 0, 255);
+}
+section {
+    background-color: rgb(230, 248, 212);
+}
+
+/* classe - específico */
+.textoAzul {
+    color: rgb(0, 128, 255);
+}
+.textoOverline {
+    text-decoration: overline;
+}
+
+/* id - mais específico */
+#matricula{
+    text-align: center;
+}
