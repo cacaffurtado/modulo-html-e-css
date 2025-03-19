@@ -1,0 +1,74 @@
+h1 {
+    color: magenta;
+}
+
+#rgb{
+    color: rgb(18, 150, 106);
+}
+
+#rgba{
+    color: rgba(255, 0, 0, 0.5);
+}
+
+#hexadecimal{
+    color: #aaaf1a;
+}
+
+#hexadecimalOpaco{
+    color: #aaaf1a50;
+}
+
+/*
+    Vai pegar a última herança de font-size (<html>: 16px) e diminuir em 50%, resultando em 8px.
+    Agora, se, em <section> - onde <p> está declarado-, tornarmos o font-size X, <p> terá 10px.
+
+*/
+
+p{
+    font-size: 16px;
+}
+
+section{
+    font-size: 20px;
+}
+
+#porcentagem{
+    font-size: 50%;
+}
+
+/* 
+    Vai pegar sempre do elemento pai.
+    2x o tamanho do elemento pai -> 16+8=24px
+*/
+#em{
+    font-size: 2em;
+}
+
+/* 
+    Vai pegar sempre do elemento raiz!
+    html{
+        font-size: 30px;
+    }
+    #rem{
+        font-size: 2rem; == 60px
+    }
+*/
+
+#rem{
+    font-size: 1rem;
+}
+
+/*
+    São unidades que variam conforme o tamanho de tela:
+    - vw: porcentegem do view port da width da tela
+    - vh: porcentegem do view port da altura da tela
+
+    NÃO INDICADAS para font-size!
+    SOMENTE <div>!
+*/
+
+#caixa{
+    background-color: tomato;
+    width: 50vw; /* */
+    height: 50vh; /* */
+}
