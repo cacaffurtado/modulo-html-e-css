@@ -1,0 +1,16 @@
+/* 
+    É recomendado inserir uma segunda fonte caso o computador não rode a primera, como: 
+    - "serif", "sans-serif", "cursive", "fantasy", "monospace"
+*/
+
+p{
+    font-family: "Rubik", sans-serif;
+    font-weight: 100; /* varia de 100 (light) a 900 (ultrabold)*/
+    font-style: italic;
+}
+
+#transform{
+    font-style: normal !important;
+    text-transform: lowercase; /* Capitalize, UPPERCASE, lowercase */
+    text-align: center;
+}
