@@ -1,0 +1,19 @@
+#caixa1, #caixa2{
+    height: 200px;
+    width: 200px;
+}
+
+#caixa1{
+    background-color: blueviolet;
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    /* margin: 10px; */
+    box-sizing: border-box;
+    /* Com o border-box, o tamanho será o estipulado (200px x 200px) independente do padding e da border. Se estes forem indicados, para compensar, será diminuido do valor do height e width. */
+}
+
+#caixa2{
+    background-color: aquamarine;
+    box-sizing: border-box;
+    margin: 10px 0px 0px 0px; /* margin-top: 10px; */
+}
