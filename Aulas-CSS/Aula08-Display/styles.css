@@ -1,0 +1,35 @@
+section{
+   padding: 10px;
+   margin: 10px;
+    /* box-sizing: border-box; */
+}
+
+/* Por default, elementos irão ocupar, horizontalmente, a tela por completo. */
+#block{
+    background-color: rgb(248, 186, 186);
+
+    p{
+        background-color: rgb(255, 0, 0);
+    }
+}
+
+#inline{
+    background-color: rgb(198, 255, 198);
+    /* Por default, o <span> é um elemento que vem com display inline, ou seja, irão ocupar somente o espaço do conteúdo */
+    span{
+        background-color: rgb(0, 255, 0);
+    }
+}
+
+#inlineBlock{
+    background-color: rgb(198, 232, 255);
+
+    p{
+        width: 100px;
+    }
+}
+
+#itemInlineBlock{
+    background-color: rgba(0, 136, 255, 0.74);
+    display: inline-block;
+}
