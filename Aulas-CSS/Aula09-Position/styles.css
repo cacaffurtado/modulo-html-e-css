@@ -1,0 +1,54 @@
+#itens{
+    background-color: rgb(220, 196, 255);
+    height: 200px;
+
+    /* altura da linha = altura da div */
+    /* 
+    line-height: 200px;
+    text-align: center;
+    */
+
+    position: relative; /* todos os elementos absolute, terão como referência a <div> itens, não a tela completa, logo flutuarão dentro da mesma*/
+}
+
+span{
+    background-color: rgb(166, 0, 255);
+}
+
+#span1{
+    position: static; /* por padrão */
+}
+
+#span2{
+    position: relative; /* pode se mover */
+    top: 10px;
+}
+
+#span3{
+    background-color: chartreuse;
+    position: absolute; /* não faz mais parte da da linha */
+    
+    /* centraliza a ponta do <span> */
+    top: 50%; 
+    left: 50%;
+
+    /* agora, centraliza o span... move metade da altura do span para cima e metade da largura para esquerda*/
+    transform: translate(-50%, -50%); 
+}
+
+#relativa{
+    background-color: rgb(186, 255, 235);
+    margin-top: 20px;
+    height: 200px;
+    position: relative;
+    span{
+        background-color: rgb(0, 255, 200);
+    }
+}
+
+#absoluta{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
